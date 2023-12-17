@@ -20,13 +20,13 @@ public class ArduinoUI {
 
         JFrame appScreen = new JFrame("Arduino LED Kontrol Uygulaması");
 
-        led1BTN.setBounds(100, 25, 200, 24);
-        led2BTN.setBounds(100, 57, 200, 24);
-        led3BTN.setBounds(100, 89, 200, 24);
-        led4BTN.setBounds(100, 121, 200, 24);
-        led5BTN.setBounds(100, 153, 200, 24);
-        lastChanges.setBounds(100, 300, 200, 24);
-        exitBTN.setBounds(100, 325, 200, 24);
+        led1BTN.setBounds(18, 25, 200, 24);
+        led2BTN.setBounds(18, 57, 200, 24);
+        led3BTN.setBounds(18, 89, 200, 24);
+        led4BTN.setBounds(18, 121, 200, 24);
+        led5BTN.setBounds(18, 153, 200, 24);
+        lastChanges.setBounds(18, 300, 200, 24);
+        exitBTN.setBounds(18, 325, 200, 24);
 
         appScreen.add(led1BTN);
         appScreen.add(led2BTN);
@@ -72,7 +72,7 @@ public class ArduinoUI {
             }
         });
 
-        appScreen.setSize(400,400);
+        appScreen.setSize(248,400);
         appScreen.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         appScreen.setLayout(null);
         appScreen.setVisible(true);
