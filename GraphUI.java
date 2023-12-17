@@ -4,9 +4,10 @@ import com.fazecast.jSerialComm.SerialPortEvent;
 
 class GraphUI {
     private static StringBuilder buffer = new StringBuilder();
+    private static final String portName = "COM1";
 
     public static void grapUI() {
-        String portName = "COM1";
+
         SerialPort serialPort = SerialPort.getCommPort(portName);
         serialPort.setBaudRate(9600);
         serialPort.openPort();
