@@ -4,7 +4,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ArduinoUI {
-    private static String portName = "COM1";
     private static JLabel lastChanges = new JLabel("deneme");
     private static JButton led1BTN = new JButton("LED 1");
     private static JButton led2BTN = new JButton("LED 2");
@@ -14,7 +13,7 @@ public class ArduinoUI {
     private static JButton exitBTN = new JButton("Çık");
 
     public static void arduinoUI() {
-        SerialPort serialPort = SerialPort.getCommPort(portName);
+        SerialPort serialPort = SerialPort.getCommPort("COM1");
         serialPort.setComPortParameters(9600, 8, 1, 0); // Baudrate: 9600, Data bits: 8, Stop bits: 1, Parity: None
         serialPort.openPort(); //
 
